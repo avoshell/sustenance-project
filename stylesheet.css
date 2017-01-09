@@ -29,16 +29,18 @@ p {
     font-size: 1em;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* NAVIGATION */
 
 nav {
     display: flex;
 }
 
-nav h2 {
+.nav-item {
     flex-grow: 1;
-    margin-left: 15px;
-    margin-right: 15px;
 }
 
 
@@ -59,9 +61,14 @@ nav h2 {
          padding: 0;
      }
 
+
      nav {
          flex-direction: column;
          width: 90%;
+     }
+
+     .nav-item {
+         background-color: lightgray;
      }
  }
 
