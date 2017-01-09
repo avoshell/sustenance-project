@@ -17,13 +17,13 @@ h2, p {
 }
 
 h1 {
-    font-size: 1.953em;
+    font-size: 2.369em;
 }
 h2 {
-    font-size: 1.563em;
+    font-size: 1.777em;
 }
 h3 {
-    font-size: 1.25em;
+    font-size: 1.333em;
 }
 p {
     font-size: 1em;
@@ -37,6 +37,8 @@ a {
 
 nav {
     display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
 }
 
 .nav-item {
@@ -65,10 +67,23 @@ nav {
      nav {
          flex-direction: column;
          width: 90%;
+         justify-content: center;
+         align-content: center;
      }
 
      .nav-item {
          background-color: lightgray;
+         padding: 10px;
+         border-radius: 15px;
+         margin: auto;
+         margin-top: 5px;
+         margin-bottom: 5px;
+         width: 60%;
+     }
+
+     .nav-item a {
+         color: #262626;
+         font-size: .75em;
      }
  }
 
