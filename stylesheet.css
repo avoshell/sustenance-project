@@ -1,3 +1,75 @@
-.main-purpose {
-    background-image:
+
+/* Headings - font-family: 'Unica One', cursive;  */
+/* Text - font-family: 'Vollkorn', serif; */
+
+
+/*** Main Styles **/
+
+body {
+    text-align: center;
 }
+
+h1, h3, h4 {
+    font-family: 'Unica One', cursive;
+}
+h2, p {
+    font-family: 'Vollkorn', serif;
+}
+
+h1 {
+    font-size: 1.953em;
+}
+h2 {
+    font-size: 1.563em;
+}
+h3 {
+    font-size: 1.25em;
+}
+p {
+    font-size: 1em;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+}
+
+nav h2 {
+    flex-grow: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+/*** Small Media Query **/
+ @media (max-width: 599px) {
+     .main-purpose {
+         height: 150px;
+         width: 95%;
+         margin: auto;
+         margin-top: 30px;
+
+     }
+
+     .small {
+         width: 100%;
+         height: 25%;
+         margin: auto;
+         padding: 0;
+     }
+
+     nav {
+         flex-direction: column;
+         width: 90%;
+     }
+ }
+
+
+/*** Medium Media Query **/
+@media (max-width: 899px) {}
+
+
+/*** Large Media Query **/
+
+@media (min-width: 1199px) {}
