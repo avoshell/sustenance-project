@@ -9,10 +9,10 @@ body {
     text-align: center;
 }
 
-h1, h3, h4 {
+h1, h2, h3, h4, .footer-item {
     font-family: 'Unica One', cursive;
 }
-h2, p {
+p, .main-purpose {
     font-family: 'Vollkorn', serif;
 }
 
@@ -46,6 +46,12 @@ nav {
 }
 
 
+/* FOOTER */
+
+.footer {
+    display: flex;
+}
+
 /*** Small Media Query **/
  @media (max-width: 599px) {
      .main-purpose {
@@ -63,6 +69,11 @@ nav {
          padding: 0;
      }
 
+     .main-image {
+         margin-top: 40px;
+     }
+
+     /*Navigation*/
 
      nav {
          flex-direction: column;
@@ -76,8 +87,8 @@ nav {
          padding: 10px;
          border-radius: 15px;
          margin: auto;
-         margin-top: 5px;
-         margin-bottom: 5px;
+         margin-top: 10px;
+         margin-bottom: 10px;
          width: 60%;
      }
 
@@ -85,6 +96,20 @@ nav {
          color: #262626;
          font-size: .75em;
      }
+
+     /*Footer*/
+     .footer {
+         flex-direction: row;
+     }
+
+    .footer-item {
+        flex-grow: 1;
+        margin: auto;
+        color: #262626;
+    }
+
+
+
  }
 
 
