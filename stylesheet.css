@@ -55,11 +55,11 @@ nav {
 /*** Small Media Query **/
  @media (max-width: 599px) {
      .main-purpose {
-         height: 150px;
-         width: 95%;
+         width: 70%;
          margin: auto;
-         margin-top: 30px;
-
+         margin-top: 50px;
+         margin-bottom: 50px;
+         line-height: 1.8em;
      }
 
      .small {
@@ -70,7 +70,7 @@ nav {
      }
 
      .main-image {
-         margin-top: 40px;
+         margin-top: 50px;
      }
 
      /*Navigation*/
@@ -100,6 +100,8 @@ nav {
      /*Footer*/
      .footer {
          flex-direction: row;
+         margin-top: 20px;
+         margin-bottom: 30px;
      }
 
     .footer-item {
