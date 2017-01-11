@@ -110,7 +110,15 @@ nav {
         color: #262626;
     }
 
+    p {
+        width: 90%;
+        margin: auto;
+    }
 
+    .about-source {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
 
  }
 
