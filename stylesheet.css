@@ -109,6 +109,7 @@ nav {
          flex-direction: row;
          margin-top: 20px;
          margin-bottom: 30px;
+         background-image: ;
      }
 
     .footer-item {
@@ -136,6 +137,20 @@ nav {
     .about p {
         margin-bottom: 40px;
     }
+
+    .about-heading {
+        background-color: #ddd;
+        padding: 10px;
+    }
+
+     /* Food Menu */
+
+     .menu-heading {
+         margin-top: 75px;
+         background-color: #ddd;
+         padding: 10px;
+         margin-bottom: 0;
+     }
 
  }
 
