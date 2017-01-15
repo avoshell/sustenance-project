@@ -22,12 +22,22 @@
     <form action="#" method="post" class="contact-us">
         <fieldset>
             <legend>Contact Us</legend>
-            <p>Name:<input type="text" name="contact-name" maxlength="30" required="required"/></p>
-            <p>Email:<input type="email" name="contact-email" maxlength="40" required="required"/></p>
-            <p>Phone:<input type="tel" name="contact-phone" maxlength="12" /></p>
-            <p>Comments:</p>
-            <textarea name="comments">Enter your comments or inquiries...</textarea>
-            <input type="submit" name="contact-submit" value="Submit" />
+            <div>
+                <p>Name:<input type="text" name="contact-name" maxlength="30" required="required"/></p>
+            </div>
+            <div>
+                <p>Email:<input type="email" name="contact-email" maxlength="40" required="required"/></p>
+            </div>
+            <div>
+                <p>Phone:<input type="tel" name="contact-phone" maxlength="10" /></p>
+            </div>
+            <div>
+                <p>Comments:</p>
+                <textarea name="comments">Enter your comments or inquiries...</textarea>
+            </div>
+            <div>
+                <input type="submit" name="contact-submit" value="Submit" />
+            </div>
         </fieldset>
     </form>
 </div>
@@ -37,8 +47,8 @@
         <fieldset>
             <legend>Make a Reservation</legend>
             <p>Name: <input type="text" name="reservation-name" maxlength="30" required="required"/></p>
-            <p>Email: <input type="email" name="reservation-email" max-lenght="40" required="required"/></p>
-            <p>Phone: <input type="tel" name="reservation-phone" required="required" /></p>
+            <p>Email: <input type="email" name="reservation-email" maxlength="40" required="required"/></p>
+            <p>Phone: <input type="tel" name="reservation-phone" maxlength="10" required="required" /></p>
             <p>Date: <input type="date" name="reservation-date" required="required"/></p>
             <p>Time: <input type="time" name="reservation-time" required="required" /></p>
             <p>Number of People: <input type="number" name="reservation-number" maxlength="2" required="required"/></p>

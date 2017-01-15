@@ -152,6 +152,21 @@ nav {
          margin-bottom: 0;
      }
 
+     /* Forms */
+     .contact-form,
+     .reservation-form {
+         width: 80%;
+         margin: auto;
+         margin-top: 50px;
+         margin-bottom: 50px;
+     }
+
+     input {
+         font-size: 1.333em;
+         border-radius: 5px;
+         padding: 5px;
+
+     }
  }
 
 
