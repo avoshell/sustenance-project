@@ -23,37 +23,36 @@
         <fieldset>
             <legend>Contact Us</legend>
             <div>
-                <p>Name:<input type="text" name="contact-name" maxlength="30" required="required"/></p>
+                <label class="title">Name: <input type="text" name="contact-name" maxlength="40" required="required"/></label>
             </div>
             <div>
-                <p>Email:<input type="email" name="contact-email" maxlength="40" required="required"/></p>
+                <label class="title">Email: <input type="email" name="contact-email" maxlength="40" required="required"/></label>
             </div>
             <div>
-                <p>Phone:<input type="tel" name="contact-phone" maxlength="10" /></p>
+                <label class="title">Phone: <input type="tel" name="contact-phone" maxlength="10" /></label>
             </div>
             <div>
-                <p>Comments:</p>
-                <textarea name="comments">Enter your comments or inquiries...</textarea>
+                <label class="title">Comments: <textarea name="comments" class="comment-placeholder">Enter your comments or inquiries...</textarea></label>
             </div>
             <div>
-                <input type="submit" name="contact-submit" value="Submit" />
+                <input type="submit" name="contact-submit" value="Submit" class="submit-btn"/>
             </div>
         </fieldset>
     </form>
 </div>
 
 <div class="reservation-form">
-    <form action="#" method="post" class="reservation">
+    <form action="#" method="post" class="reservation" id="make-reservation">
         <fieldset>
             <legend>Make a Reservation</legend>
-            <p>Name: <input type="text" name="reservation-name" maxlength="30" required="required"/></p>
-            <p>Email: <input type="email" name="reservation-email" maxlength="40" required="required"/></p>
-            <p>Phone: <input type="tel" name="reservation-phone" maxlength="10" required="required" /></p>
-            <p>Date: <input type="date" name="reservation-date" required="required"/></p>
-            <p>Time: <input type="time" name="reservation-time" required="required" /></p>
-            <p>Number of People: <input type="number" name="reservation-number" maxlength="2" required="required"/></p>
-            <p>Dietary Restrictions/Allergies? <input type="text" name="dietary-issues" maxlength="60"/></p>
-            <input type="submit" name="reservation-submit" value="Reserve" />
+            <label class="title">Name: <input type="text" name="reservation-name" maxlength="30" required="required"/></label>
+            <label class="title">Email: <input type="email" name="reservation-email" maxlength="40" required="required"/></label>
+            <label class="title">Phone: <input type="tel" name="reservation-phone" maxlength="10" required="required" /></label>
+            <label class="title">Date: <input type="date" name="reservation-date" required="required"/></label>
+            <label class="title">Time: <input type="time" name="reservation-time" required="required" /></label>
+            <label class="title">Number of People: <input type="number" name="reservation-number" maxlength="2" required="required"/></label>
+            <label class="title">Dietary Restrictions/Allergies? <input type="text" name="dietary-issues" maxlength="60"/></label>
+            <input type="submit" name="reservation-submit" value="Reserve" class="submit-btn" />
         </fieldset>
 
 
