@@ -12,7 +12,7 @@ body {
 h1, h2, h3, h4, .footer-item {
     font-family: 'Unica One', cursive;
 }
-p, .main-purpose {
+p, .main-purpose, .title {
     font-family: 'Vollkorn', serif;
 }
 
@@ -31,6 +31,16 @@ p {
 
 a {
     text-decoration: none;
+}
+
+
+a:visited {
+    color: #262626;
+}
+
+a:focus,
+a:hover {
+    color: #d14108;
 }
 
 .about-heading,
@@ -66,7 +76,8 @@ nav {
     text-align: center;
     background-color: goldenrod;
     color: #262626;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Unica One', cursive;
+    font-size: 1.333em;
     border-radius: 10px;
 }
 
@@ -91,6 +102,7 @@ nav {
          width: 90%;
          justify-content: center;
          align-content: center;
+         margin-bottom: 50px;
      }
 
      .nav-item {
@@ -147,8 +159,10 @@ nav {
         margin-bottom: 40px;
     }
 
-    .about-heading {
-        padding: 10px;
+    .about-heading,
+    .menu-heading {
+        padding-top: 10px;
+        padding-bottom: 10px;
         border-radius: 15px;
     }
 
@@ -156,7 +170,6 @@ nav {
 
      .menu-heading {
          margin-top: 75px;
-         padding: 10px;
          margin-bottom: 0;
      }
 
@@ -189,6 +202,8 @@ nav {
 
      .submit-btn {
          width: 50%;
+         margin-top: 10px;
+         margin-bottom: 10px;
      }
 
      .comment-placeholder {
@@ -201,7 +216,6 @@ nav {
      .contact-us {
          margin: auto;
      }
-
  }
 
 
@@ -229,8 +243,6 @@ nav {
         margin-right: 25px;
     }
 
-    /* Images */
-
     /* Home Page */
 
     .main-purpose {
@@ -250,7 +262,8 @@ nav {
     /* Food Menu */
 
     .menu-heading {
-        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         margin-top: 75px;
         margin-bottom: 0;
     }
@@ -302,4 +315,57 @@ nav {
 
 /*** Large Media Query **/
 
-@media (min-width: 1199px) {}
+@media (min-width: 900px) {
+
+    /* Images */
+
+   .image-div {
+       width: 80%;
+       height: 300px;
+       margin: auto;
+       overflow: hidden;
+       border-radius: 0 0 5px 5px;
+   }
+
+    .image {
+        margin: -75px;
+    }
+    /* Navigation */
+
+    .menu-heading {
+        width: 80%;
+        border-radius: 5px 5px 0 0;
+        margin: auto;
+    }
+    /* Forms */
+
+    .contact-form,
+    .reservation-form {
+        width: 45%;
+        margin: auto;
+    }
+
+    .title {
+        width: 75%;
+    }
+
+
+    /* Footer */
+
+
+}
+
+/*** Extra Large Media Query **/
+@media (min-width: 1200px) {
+
+    .image-div,
+    .menu-heading,
+    p {
+        width: 70%;
+    }
+
+    .image {
+        margin: -150px;
+    }
+
+}
