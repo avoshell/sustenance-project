@@ -81,12 +81,23 @@ nav {
     border-radius: 10px;
 }
 
+.header {
+    background: ;
+}
 /*** Small Media Query **/
  @media (max-width: 599px) {
+
+     .main-logo {
+         width: 100%;
+         height: auto;
+         margin: auto;
+         margin-top: 50px;
+         margin-bottom: 50px;
+     }
+
      .main-purpose {
          width: 70%;
          margin: auto;
-         margin-top: 50px;
          margin-bottom: 50px;
          line-height: 1.8em;
      }
@@ -222,6 +233,13 @@ nav {
 /*** Medium Media Query **/
 @media (min-width: 600px) {
 
+    .main-logo {
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
     p {
         width: 80%;
         margin: auto;
@@ -316,6 +334,13 @@ nav {
 /*** Large Media Query **/
 
 @media (min-width: 900px) {
+
+    .main-logo {
+        width: 70%;
+        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
 
     /* Images */
 
