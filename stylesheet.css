@@ -98,6 +98,8 @@ nav {
 }
 
 
+
+
 /*** Small Media Query **/
  @media (max-width: 599px) {
 
@@ -199,6 +201,13 @@ nav {
      }
 
      /* Forms */
+
+     .hours {
+         border-top: 1px #262626 dashed;
+         width: 80%;
+         margin: auto;
+     }
+
      .contact-form,
      .reservation-form {
          width: 80%;
@@ -306,6 +315,14 @@ nav {
     }
 
     /* Contact Forms */
+
+    .hours {
+        border-top: 1px #262626 dashed;
+        width: 40%;
+        margin: auto;
+    }
+
+
     .contact-form,
     .reservation-form {
         width: 50%;
