@@ -44,7 +44,8 @@ a:hover {
 }
 
 .about-heading,
-.menu-heading {
+.menu-heading,
+.form-heading {
     background-color: #ddd;
 }
 
@@ -61,9 +62,16 @@ nav {
 
 .footer {
     display: flex;
+    border-top: 1px #262626 solid;
+    padding-top: 25px;
 }
 
-.image {
+.footer-item {
+    flex-grow: 1;
+}
+
+.image,
+.about-image {
     max-width: 100%;
     height: auto;
     margin: auto;
@@ -84,6 +92,12 @@ nav {
 .header {
     background: ;
 }
+
+.contact-info {
+    margin: 30px auto 40px auto;
+}
+
+
 /*** Small Media Query **/
  @media (max-width: 599px) {
 
@@ -171,10 +185,10 @@ nav {
     }
 
     .about-heading,
-    .menu-heading {
+    .menu-heading,
+    .form-heading {
         padding-top: 10px;
         padding-bottom: 10px;
-        border-radius: 15px;
     }
 
      /* Food Menu */
@@ -243,7 +257,11 @@ nav {
     p {
         width: 80%;
         margin: auto;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
+    }
+
+    .image-div {
+        margin-bottom: 15px;
     }
 
     /* Navigation */
@@ -271,7 +289,8 @@ nav {
     }
 
     /* About */
-    .about-heading {
+    .about-heading,
+    .form-heading {
         margin-top: 50px;
         margin-bottom: 30px;
         padding: 10px;
@@ -289,7 +308,7 @@ nav {
     /* Contact Forms */
     .contact-form,
     .reservation-form {
-        width: 65%;
+        width: 50%;
         margin: auto;
     }
 
@@ -328,6 +347,10 @@ nav {
 
     /* Footer */
 
+    .footer {
+        margin-top: 75px;
+    }
+
 }
 
 
@@ -342,25 +365,42 @@ nav {
         margin-bottom: 50px;
     }
 
+    .main-nav {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
     /* Images */
 
    .image-div {
        width: 80%;
        height: 300px;
-       margin: auto;
+       margin: 0 auto 30px auto;
        overflow: hidden;
-       border-radius: 0 0 5px 5px;
+       border-radius: 5px;
    }
 
-    .image {
+    .image,
+    .about-image {
         margin: -75px;
     }
+
+
+
     /* Navigation */
 
-    .menu-heading {
+    .menu-heading,
+    .about-heading {
         width: 80%;
-        border-radius: 5px 5px 0 0;
         margin: auto;
+    }
+
+    .about-heading {
+        border-radius: 5px;
+    }
+
+    .menu-heading {
+        border-radius: 5px 5px 0 0;
     }
     /* Forms */
 
@@ -368,14 +408,26 @@ nav {
     .reservation-form {
         width: 45%;
         margin: auto;
+        margin-bottom: 30px;
     }
 
     .title {
         width: 75%;
     }
 
+    .form-heading {
+        width: 80%;
+        margin: auto;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+
 
     /* Footer */
+    .footer {
+        width: 80%;
+        margin: auto;
+    }
 
 
 }
@@ -392,5 +444,8 @@ nav {
     .image {
         margin: -150px;
     }
+
+
+
 
 }
