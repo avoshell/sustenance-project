@@ -43,9 +43,9 @@ a:hover {
     color: #d14108;
 }
 
-.about-heading,
-.menu-heading,
-.form-heading {
+.header-informational,
+.header-food,
+.header-form {
     background-color: #ddd;
 }
 
@@ -173,7 +173,7 @@ nav {
          margin-bottom: 75px;
      }
 
-    .about-source {
+    .source-description {
         margin-top: 10px;
         margin-bottom: 50px;
     }
@@ -186,16 +186,16 @@ nav {
         margin-bottom: 40px;
     }
 
-    .about-heading,
-    .menu-heading,
-    .form-heading {
+    .header-informational,
+    .header-food,
+    .header-form {
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
      /* Food Menu */
 
-     .menu-heading {
+     .header-food {
          margin-top: 75px;
          margin-bottom: 0;
      }
@@ -208,8 +208,8 @@ nav {
          margin: auto;
      }
 
-     .contact-form,
-     .reservation-form {
+     .form-contact,
+     .form-reservation {
          width: 80%;
          margin: auto;
          margin-top: 50px;
@@ -298,8 +298,8 @@ nav {
     }
 
     /* About */
-    .about-heading,
-    .form-heading {
+    .header-informational,
+    .header-form {
         margin-top: 50px;
         margin-bottom: 30px;
         padding: 10px;
@@ -307,7 +307,7 @@ nav {
 
     /* Food Menu */
 
-    .menu-heading {
+    .header-food {
         padding-top: 10px;
         padding-bottom: 10px;
         margin-top: 75px;
@@ -323,8 +323,8 @@ nav {
     }
 
 
-    .contact-form,
-    .reservation-form {
+    .form-contact,
+    .form-reservation {
         width: 50%;
         margin: auto;
     }
@@ -406,23 +406,23 @@ nav {
 
     /* Navigation */
 
-    .menu-heading,
-    .about-heading {
+    .header-food,
+    .header-informational {
         width: 80%;
         margin: auto;
     }
 
-    .about-heading {
+    .header-informational {
         border-radius: 5px;
     }
 
-    .menu-heading {
+    .header-food {
         border-radius: 5px 5px 0 0;
     }
     /* Forms */
 
-    .contact-form,
-    .reservation-form {
+    .form-contact,
+    .form-reservation {
         width: 45%;
         margin: auto;
         margin-bottom: 30px;
@@ -432,7 +432,7 @@ nav {
         width: 75%;
     }
 
-    .form-heading {
+    .header-form {
         width: 80%;
         margin: auto;
         border-radius: 5px;
@@ -453,7 +453,7 @@ nav {
 @media (min-width: 1200px) {
 
     .image-div,
-    .menu-heading,
+    .header-food,
     p {
         width: 70%;
     }
