@@ -8,14 +8,12 @@
 body {
     text-align: center;
 }
-
 h1, h2, h3, h4, .footer-item {
     font-family: 'Unica One', cursive;
 }
 p, .main-purpose, .title {
     font-family: 'Vollkorn', serif;
 }
-
 h1 {
     font-size: 2.369em;
 }
@@ -28,59 +26,49 @@ h3 {
 p {
     font-size: 1em;
 }
-
 a {
     text-decoration: none;
 }
-
-
 a:visited {
     color: #262626;
 }
-
 a:focus,
 a:hover {
     color: #d14108;
 }
-
 .header-informational,
 .header-food,
 .header-form {
     background-color: #ddd;
 }
 
-/* NAVIGATION */
-
-
-nav {
-    display: flex;
-    flex-wrap: nowrap;
+nav,
+.image,
+.button-submit {
     margin: auto;
 }
 
+/* NAVIGATION */
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+}
 /* FOOTER */
-
 .footer {
     display: flex;
     border-top: 1px #262626 solid;
     padding-top: 25px;
 }
-
 .footer-item {
     flex-grow: 1;
 }
-
-.image,
-.about-image {
+.image {
     max-width: 100%;
     height: auto;
-    margin: auto;
     padding: 0;
 }
-
 /* FORMS */
-.submit-btn {
-    margin: auto;
+.button-submit {
     text-align: center;
     background-color: goldenrod;
     color: #262626;
@@ -88,11 +76,6 @@ nav {
     font-size: 1.333em;
     border-radius: 10px;
 }
-
-.header {
-    background: ;
-}
-
 .contact-info {
     margin: 30px auto 40px auto;
 }
@@ -102,48 +85,112 @@ nav {
 
 /*** Small Media Query **/
  @media (max-width: 599px) {
+    /* Colors */
+     .nav-item a,
+     .footer-item,
+     .title {
+         color: #262626;
+     }
 
+     /* Margins */
+     p,
+     .main-logo,
+     .main-purpose,
+     .nav-item,
+     .footer-item,
+     .hours,
+     .form-contact,
+     .form-reservation,
+     .reservation,
+     .contact-us {
+         margin: auto;
+     }
+     .nav-item,
+     .source-description,
+     .button-submit {
+         margin-top: 10px;
+     }
+     .nav-item,
+     .button-submit {
+         margin-bottom: 10px;
+     }
+     .main-logo,
+     .main-image,
+     .form-contact,
+     .form-reservation {
+         margin-top: 50px;
+     }
+     nav,
+     .main-logo,
+     .main-purpose,
+     .form-contact,
+     .form-reservation,
+     .source-description {
+         margin-bottom: 50px;
+     }
+     .about,
+     .header-food {
+         margin-top: 75px;
+     }
+
+     /* Widths */
+     .hours,
+     .form-contact,
+     .form-reservation {
+         width: 80%;
+     }
+     nav,
+     p {
+         width: 90%;
+     }
+
+     /* Border Radius */
+     input,
+     .comment-placeholder {
+         border-radius: 5px;
+     }
+
+     /* Specific Styles */
      .main-logo {
          width: 100%;
          height: auto;
-         margin: auto;
-         margin-top: 50px;
-         margin-bottom: 50px;
      }
-
      .main-purpose {
          width: 70%;
-         margin: auto;
-         margin-bottom: 50px;
          line-height: 1.8em;
      }
-
-     .main-image {
-         margin-top: 50px;
+     .about {
+         margin-bottom: 75px;
+     }
+     .about h3{
+         margin-top: 40px;
+     }
+     .about p {
+         margin-bottom: 40px;
+     }
+     .header-informational,
+     .header-food,
+     .header-form {
+         padding-top: 10px;
+         padding-bottom: 10px;
+     }
+     .header-food {
+         margin-bottom: 0;
      }
 
      /*Navigation*/
-
      nav {
          flex-direction: column;
-         width: 90%;
          justify-content: center;
          align-content: center;
-         margin-bottom: 50px;
      }
-
      .nav-item {
          background-color: lightgray;
          padding: 10px;
          border-radius: 15px;
-         margin: auto;
-         margin-top: 10px;
-         margin-bottom: 10px;
          width: 60%;
      }
-
      .nav-item a {
-         color: #262626;
          font-size: .75em;
      }
 
@@ -152,77 +199,15 @@ nav {
          flex-direction: row;
          margin-top: 20px;
          margin-bottom: 30px;
-         background-image: ;
      }
-
     .footer-item {
         flex-grow: 1;
-        margin: auto;
-        color: #262626;
     }
-
-    p {
-        width: 90%;
-        margin: auto;
-    }
-
-     /* About - Learn More */
-
-     .about {
-         margin-top: 75px;
-         margin-bottom: 75px;
-     }
-
-    .source-description {
-        margin-top: 10px;
-        margin-bottom: 50px;
-    }
-
-    .about h3{
-        margin-top: 40px;
-    }
-
-    .about p {
-        margin-bottom: 40px;
-    }
-
-    .header-informational,
-    .header-food,
-    .header-form {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-     /* Food Menu */
-
-     .header-food {
-         margin-top: 75px;
-         margin-bottom: 0;
-     }
-
      /* Forms */
-
-     .hours {
-         border-top: 1px #262626 dashed;
-         width: 80%;
-         margin: auto;
-     }
-
-     .form-contact,
-     .form-reservation {
-         width: 80%;
-         margin: auto;
-         margin-top: 50px;
-         margin-bottom: 50px;
-     }
-
      input {
          font-size: 1.333em;
-         border-radius: 5px;
          padding: 5px;
-
      }
-
      .title {
          float: left;
          width: 95%;
@@ -230,25 +215,13 @@ nav {
          padding-right: 10px;
          margin-top: 5px;
          margin-bottom: 5px;
-         color: #262626;
-         font-family: 'Vollkorn', serif;
      }
-
-     .submit-btn {
+     .button-submit {
          width: 50%;
-         margin-top: 10px;
-         margin-bottom: 10px;
      }
-
      .comment-placeholder {
          color: gray;
          font-size: 1em;
-         border-radius: 5px;
-     }
-
-     .reservation,
-     .contact-us {
-         margin: auto;
      }
  }
 
@@ -343,7 +316,7 @@ nav {
         text-align: left;
     }
 
-    .submit-btn {
+    .button-submit {
         width: 30%;
         margin-top: 15px;
         margin-bottom: 15px;
@@ -374,6 +347,12 @@ nav {
 /*** Large Media Query **/
 
 @media (min-width: 900px) {
+    .defining-image {
+        width: 80%;
+        border-radius: 5px;
+        height: auto;
+        margin-bottom: 50px;
+    }
 
     .main-logo {
         width: 70%;
