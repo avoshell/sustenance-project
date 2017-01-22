@@ -2,9 +2,7 @@
 /* Headings - font-family: 'Unica One', cursive;  */
 /* Text - font-family: 'Vollkorn', serif; */
 
-
 /*** Main Styles **/
-
 body {
     text-align: center;
 }
@@ -302,7 +300,6 @@ nav {
 
     /* Contact Forms */
     .hours {
-        border-top: 1px #262626 dashed;
         width: 40%;
     }
     .form-contact,
@@ -335,7 +332,8 @@ nav {
 
 /*** Large Media Query **/
 @media (min-width: 900px) {
-    .project-description {
+    .project-description,
+    .defining-image {
         margin-top: 25px;
     }
 
@@ -419,12 +417,20 @@ nav {
 
 /*** Extra Large Media Query **/
 @media (min-width: 1200px) {
+    p,
     .image-div,
-    .header-food,
-    p {
+    .header-food {
         width: 70%;
     }
     .image {
-        margin: -150px;
+        margin: -100px;
     }
+    .defining-image {
+        width: 80%;
+        padding-top: 50px;
+    }
+    .footer {
+        margin-top: 150px;
+    }
+
 }
