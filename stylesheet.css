@@ -422,6 +422,17 @@ nav {
     .header-food {
         width: 70%;
     }
+    .main-logo {
+        margin-bottom: 5px;
+    }
+    .main-nav {
+        margin-bottom: 25px;
+    }
+    .main-image {
+        height: 300px;
+        overflow: hidden;
+        border-radius: 5px;
+    }
     .image {
         margin: -100px;
     }
@@ -430,6 +441,6 @@ nav {
         padding-top: 50px;
     }
     .footer {
-        margin-top: 150px;
+        margin-top: 50px;
     }
 }
